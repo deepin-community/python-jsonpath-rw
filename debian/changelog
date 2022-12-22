@@ -1,0 +1,59 @@
+python-jsonpath-rw (1.4.0-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Thomas Goirand ]
+  * Removed Python 2 support (Closes: #937857).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 02 Sep 2019 17:39:26 +0200
+
+python-jsonpath-rw (1.4.0-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+  * Correcting permissions in debian packaging files.
+
+  [ Thomas Goirand ]
+  * Add missing dh-python build-depends.
+  * Using pkgos-dh_auto_install.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 02 Apr 2018 20:04:04 +0200
+
+python-jsonpath-rw (1.4.0-2) unstable; urgency=medium
+
+  * Fixed VCS URLs (https).
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Using OpenStack's Gerrit as VCS URLs.
+
+ -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:40:06 +0100
+
+python-jsonpath-rw (1.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixed watch file.
+  * Using -v flag when running nose.
+  * Fixed (build-)depends.
+  * Now using update-alternatives for /usr/bin/jsonpath.
+  * Standards-Version is now 3.9.6 (no change).
+  * Also run nose with Python 3.
+  * Overrides dh_python3 to fix sheebang.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 08 Dec 2015 11:13:01 +0000
+
+python-jsonpath-rw (1.2.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #722053)
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 06 Sep 2013 17:06:02 +0800
